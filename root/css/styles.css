@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilo del header */
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+header{
+    width: 100vw;
+    height: 15vh;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    list-style-type: none;
+}
+
+nav{
+    width:35%;
+}
+
+nav ul li a{
+    color: #242E52;
+    text-decoration: none;
+}
+
+/*Clase que vamos a usar en todos los botones*/
+.boton{
+    width: 134px;
+    height: 44px;
+    border-radius: 24px;
+    border:none;
+    background-color:#8B48BF ;
+    color:#FFFFFF;
+}
+
+/* menu desplegable bars para versión mobile*/
+#hamburguesa{
+    display:none;
+}
+
+/*Empieza el estilo del main*/
+
+main {
+    width: 100vw;
+    height: 80vh;
+}
+
+.flex-m {
+    display: flex;
+    justify-content: center;
+}
+
+
+.flex-c {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec-doble {
+    width: 40%;
+    height: 70%;
+    margin-top: 3%;
+}
+
+h1 {
+    color: #232C50;
+    font-size: 58px;
+    font-weight: 700;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.texto {
+    font-size: 16.56px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    width: 65%;
+}
+
+/*comienza el estilo de la segunda sección de la página*/
+.sect {
+    width: 100vw;
+    height: 80vh;
+    margin-bottom: 8%;
+}
+.titulo-2 {
+    color:#232851;
+    font-size: 36px;
+    font-weight: 700;
+    width: 70%
+}
+
+.flex-lista {
+    display: flex;
+    align-items: center;
+    margin-top:6%;
+    height: 10%;
+}
+
+.num-lista {
+    color: white;
+    background-color: #8B48BF;
+    border-radius: 25px;
+    width: 50px;
+    height: 30px;
+    padding: 5px 15px;
+    margin-right: 20px;
+}
+
+.titulo-list {
+    font-size: 16px;
+    color: #323851;
+    font-weight: 700;
+}
+
+.text-list {
+    font-size: 16.3px;
+    font-weight: 500;
+    color: #B3B2B7;
+    margin-left: 12.5%;
+    line-height: 25px;
+    width: 82%;
+}
