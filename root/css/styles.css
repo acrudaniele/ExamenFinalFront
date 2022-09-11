@@ -19,7 +19,6 @@ body {
 header{
     width: 100vw;
     height: 15vh;
-    
 }
 
 nav ul{
@@ -55,9 +54,11 @@ nav ul li a{
 
 /*Empieza el estilo del main*/
 
-main {
+.sect {
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
+    margin-bottom: 5%;
+    padding-top: 5%;
 }
 
 .flex-m {
@@ -73,10 +74,12 @@ main {
 
 .sec-doble {
     width: 40%;
-    height: 70%;
+    height: 85%;
     margin-top: 3%;
 }
-
+.imag-porc {
+    height: 100%;
+}
 h1 {
     color: #232C50;
     font-size: 58px;
@@ -93,11 +96,7 @@ h1 {
 }
 
 /*comienza el estilo de la segunda sección de la página*/
-.sect {
-    width: 100vw;
-    height: 80vh;
-    margin-bottom: 8%;
-}
+
 .titulo-2 {
     color:#232851;
     font-size: 36px;
@@ -136,3 +135,36 @@ h1 {
     line-height: 25px;
     width: 82%;
 }
+
+/*Comienza el estilo de la sección de las cards */
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-3 {
+    color: #242E53;
+    font-size: 39px;
+    font-weight: 700;
+}
+
+.card {
+    background-color: #FAFAFA;
+    width: 30%;
+    height: 70%;
+    margin-top: 5%;
+}
+
+.name-card {
+    color:#242E53;
+    font-size: 16.07px;
+    font-weight: 700;
+}
+
+.text-card {
+    text-align:center;
+    color: #B9B9C1;
+    font-weight: 600;
+}
+
