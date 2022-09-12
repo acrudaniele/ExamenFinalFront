@@ -41,7 +41,7 @@ nav ul li a{
 .boton{
     width: 134px;
     height: 44px;
-    border-radius: 24px;
+    border-radius: 50px;
     border:none;
     background-color:#8B48BF ;
     color:#FFFFFF;
@@ -56,9 +56,9 @@ nav ul li a{
 
 .sect {
     width: 100vw;
-    height: 90vh;
+    height: 85vh;
     margin-bottom: 5%;
-    padding-top: 5%;
+    
 }
 
 .flex-m {
@@ -78,7 +78,8 @@ nav ul li a{
     margin-top: 3%;
 }
 .imag-porc {
-    height: 100%;
+    height: 75%;
+
 }
 h1 {
     color: #232C50;
@@ -140,7 +141,7 @@ h1 {
 
 .center {
     align-items: center;
-    justify-content: center;
+    
 }
 
 .titulo-3 {
@@ -152,19 +153,118 @@ h1 {
 .card {
     background-color: #FAFAFA;
     width: 30%;
-    height: 70%;
+    height: 60%;
     margin-top: 5%;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.img-card {
+    position:absolute;
+    bottom: 85%;
 }
 
 .name-card {
     color:#242E53;
     font-size: 16.07px;
     font-weight: 700;
+    margin-top: 14%;
 }
 
 .text-card {
     text-align:center;
     color: #B9B9C1;
     font-weight: 600;
+    width: 92%;
 }
 
+/*Comienzo de estilo de ultima sección antes del footer */
+.flex-foot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#last-sec {
+    width: 100%;
+    height: 30vh;
+    background-color: #8B48BF;
+}
+
+#titulo-claro {
+    color:white;
+    font-size: 40px;
+    width: 40%;
+    font-weight: 700;
+    
+}
+
+#boton-claro {
+    background-color: white;
+    color:#8B48BF;
+}
+
+/*Comienza el estilo del footer. Lord have mercy*/
+
+#foot{
+    background-color: #1E1E26;
+    width: 100%;
+    height: 30vh;
+    justify-content: center;
+}
+
+.foot-div{
+    justify-content: space-around;
+    height: 80%;
+
+}
+
+.margin-r {
+    margin-right: 10%; 
+    /*Lo uso para separar los divs dentro del footer.
+    Cuando haga el mobile voy a tener que sacarlo */
+}
+
+.links {
+    margin: 5%;
+}
+
+#nav-foot {
+    width: 30%;
+    justify-content: space-between;
+}
+
+div ul {
+    list-style-type: none;
+}
+
+div ul li {
+    margin-bottom: 20%;
+}
+
+div ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+
+#mail {
+    border-radius: 50px;
+    height: 44px;
+    width: 200px;
+}
+
+#boton-form{
+
+    width: 63px;
+    height: 42px;
+}
+
+.copyr {
+    color: #8C8C94;
+    font-size: 12.5px;
+    font-weight: 500;
+    margin-left: 15%
+}
