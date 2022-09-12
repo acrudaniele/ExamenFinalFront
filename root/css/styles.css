@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+
 * {
     box-sizing: border-box;
     font-family: 'Be Vietnam Pro', sans-serif;
@@ -45,6 +48,7 @@ nav ul li a{
     border:none;
     background-color:#8B48BF ;
     color:#FFFFFF;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
 /* menu desplegable bars para versión mobile*/
@@ -267,4 +271,18 @@ div ul li a {
     font-size: 12.5px;
     font-weight: 500;
     margin-left: 15%
+}
+
+/*pseudoclases */
+
+a:hover {
+    opacity: 60%;
+}
+
+.boton:hover {
+    opacity: 70%;
+}
+
+#boton-claro:active , .boton:active {
+    background-color: #242E52;
 }
