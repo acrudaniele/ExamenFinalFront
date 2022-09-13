@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="flex">
-      <img src="./img/Logo.png" alt="Logo" />
+      <img id="logo-top" src="./img/Logo.png" alt="Logo" />
       <nav>
         <ul>
           <li><a href="#">Pricing</a></li>
@@ -26,9 +26,13 @@
         </ul>
       </nav>
       <button type="button" class="boton">Get Started</button>
-      <img src="./img/Hamburguesa.png" alt="Boton de nav desplegable" id="hamburguesa" />
+      <img
+        src="./img/Hamburguesa.png"
+        alt="Boton de nav desplegable"
+        id="hamburguesa"
+      />
     </header>
-    <main class="flex-m sect">
+    <main class="flex-m sect revers">
       <section class="flex-c sec-doble">
         <h1>Bring everyone together to build better products.</h1>
         <p class="texto">
@@ -37,10 +41,14 @@
         </p>
         <button class="boton" type="button">Get Started</button>
       </section>
-      <img class="sec-doble imag-porc" src="./img/Imagenes porcentajes.png" alt="Porcentajes" />
+      <img
+        class="sec-doble imag-porc"
+        src="./img/Imagenes porcentajes.png"
+        alt="Porcentajes"
+      />
     </main>
-    <section class="flex-m sect">
-      <div class="sec-doble">
+    <section class="flex-m sect column-mob">
+      <div class="sec-doble sec-mob">
         <h2 class="titulo-2">What's different about Manage?</h2>
         <p class="texto">
           Manage provides all the functionality your teas needs, without the
@@ -49,33 +57,31 @@
         </p>
       </div>
       <div class="sec-doble">
-        <div class="flex-lista">
-          <p class="num-lista">01</p>
-          <h6 class="titulo-list">Track company-wide progress</h6>
-        </div>
-        <div>
+        <div class="flex-c">
+          <h6 class="titulo-list" id="title-1-list">
+            Track company-wide progress
+          </h6>
           <p class="text-list">
             See how your day-to-day tasks fit into the wider vision. Go from
             tracking progress at the milestone level all the way done to the
             smallest of details. Never lose sight of the bigger picture again.
           </p>
         </div>
-        <div class="flex-lista">
-          <p class="num-lista">02</p>
-          <h6 class="titulo-list">Advance built-in reports</h6>
-        </div>
-        <div>
+
+        <div class="flex-c">
+          <h6 class="titulo-list" id="title-2-list">
+            Advance built-in reports
+          </h6>
           <p class="text-list">
             Set internal delivery estimates and track progress toward company
             goals. Our customisable dashboard helps you build out the reports
             you need to keep key stakeholders informed.
           </p>
         </div>
-        <div class="flex-lista">
-          <p class="num-lista">03</p>
-          <h6 class="titulo-list">Everything you need in one place</h6>
-        </div>
-        <div>
+        <div class="flex-c">
+          <h6 class="titulo-list" id="title-3-list">
+            Everything you need in one place
+          </h6>
           <p class="text-list">
             Stop jumping from one service to another to communicate, store
             files, track tasks and share documents. Manage offers an all-in-one
@@ -106,7 +112,11 @@
           </p>
         </article>
         <article class="flex-c center card">
-          <img class="img-card" src="./img/Chica 3.png" alt="Foto de Ali hombre" />
+          <img
+            class="img-card"
+            src="./img/Chica 3.png"
+            alt="Foto de Ali hombre"
+          />
           <h3 class="name-card">Ali Bravo</h3>
           <p class="text-card">
             “Manage allows us to provide structure and process. It keeps us
@@ -152,7 +162,7 @@
           </ul>
         </div>
         <div>
-          <ul  class="flex-c">
+          <ul class="flex-c">
             <li><a href="#">Careers</a></li>
             <li><a href="#">Comunity</a></li>
             <li><a href="#">Privacy Policy</a></li>
@@ -169,7 +179,7 @@
               required
               placeholder="Update in your inbox..."
             />
-            <button class=boton id="boton-form" type="submit">Go</button>
+            <button class="boton" id="boton-form" type="submit">Go</button>
           </form>
         </div>
         <p class="copyr">Copyright 2020. All Rights Reserved</p>

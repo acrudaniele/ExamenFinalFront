@@ -109,12 +109,7 @@ h1 {
     width: 70%
 }
 
-.flex-lista {
-    display: flex;
-    align-items: center;
-    margin-top:6%;
-    height: 10%;
-}
+
 
 .num-lista {
     color: white;
@@ -130,16 +125,53 @@ h1 {
     font-size: 16px;
     color: #323851;
     font-weight: 700;
+    margin-bottom: 17px;
 }
 
 .text-list {
     font-size: 16.3px;
     font-weight: 500;
     color: #B3B2B7;
-    margin-left: 12.5%;
+    margin-left: 15%;
     line-height: 25px;
     width: 82%;
 }
+
+/*Numeros de la lista con before por el mobile*/
+#title-1-list::before {
+    content: "01";
+    color: white;
+    background-color: #8B48BF;
+    border-radius: 25px;
+    width: 50px;
+    height: 30px;
+    padding: 10px 25px;
+    margin-right: 15px;
+}
+
+#title-2-list::before {
+    content: "02";
+    color: white;
+    background-color: #8B48BF;
+    border-radius: 25px;
+    width: 50px;
+    height: 30px;
+    padding: 10px 25px;
+    margin-right: 15px;
+}
+
+#title-3-list::before {
+    content: "03";
+    color: white;
+    background-color: #8B48BF;
+    border-radius: 25px;
+    width: 50px;
+    height: 30px;
+    padding: 10px 25px;
+    margin-right: 15px;
+}
+
+
 
 /*Comienza el estilo de la sección de las cards */
 
@@ -152,14 +184,15 @@ h1 {
     color: #242E53;
     font-size: 39px;
     font-weight: 700;
+    margin-bottom: 50px;
 }
 
 .card {
     background-color: #FAFAFA;
     width: 30%;
     height: 60%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 65px;
+    margin-bottom: 65px;
     position: relative;
 }
 
@@ -172,7 +205,7 @@ h1 {
     color:#242E53;
     font-size: 16.07px;
     font-weight: 700;
-    margin-top: 14%;
+    margin-top: 65px;
 }
 
 .text-card {
@@ -273,16 +306,97 @@ div ul li a {
     margin-left: 15%
 }
 
-/*pseudoclases */
+/*pseudoselectores */
 
 a:hover {
     opacity: 60%;
+    cursor: pointer;
 }
 
 .boton:hover {
     opacity: 70%;
+    cursor: pointer;
 }
 
 #boton-claro:active , .boton:active {
     background-color: #242E52;
+}
+
+input:valid {
+    border:4px solid rgb(40, 150, 45);
+}
+
+
+/*Empezamos con el mobile */
+
+@media (max-width: 481px){
+    /*Comenzamos con el header*/
+    header{
+        margin-top:30px;
+    }
+    nav{
+        display:none;
+    }
+    header .boton {
+        display:none;
+    }
+    #hamburguesa{
+        display:block;
+        margin-right: 30px;
+    }
+    .flex{
+        justify-content: space-between;
+    }
+    #logo-top {
+        margin-left: 30px;
+    }
+    /*Ahora estilo del main */
+    .revers {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .imag-porc {
+        width:90%;
+        height: 40%;
+        margin-top: 10%;
+    }
+    .sect {
+        height: 130vh;
+        width: 100vw;
+    }
+    .sec-doble {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        height: 50%;
+    }
+    h1{
+        width: 100%;
+        text-align: center;
+    }
+
+    /*Comenzamos con la sección de la lista */
+
+    .sec-mob {
+        height: 30%;
+    }
+
+    .column-mob {
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulo-2 {
+        width: 100%;
+        text-align:center;
+    }
+    .texto {
+        width: 80%;
+    }
+
+
+
+
+
+
 }
