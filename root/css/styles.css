@@ -354,7 +354,7 @@ input:valid {
     .revers {
         flex-direction: column-reverse;
         align-items: center;
-        justify-items: flex-start;
+        justify-items: flex-end;
     }
     #imag-porc {
         width:90%;
@@ -419,9 +419,83 @@ input:valid {
 
     /*Sección de las cards */
     #cards-mob {
-        height: 90vh;
+        height: 70vh;
+    }
+    .card {
+        width: 90%;
+        height: 65%;
     }
 
+    .mob-none{
+        display:none;
+    }
 
+    /*Estilo mobile de la sección anterior al footer */
+    #last-sec {
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 37vh;
+    }
+    #titulo-claro{
+        width: 73%;
+    }
+
+    /*Estilo del footer. Lord have mercy again */
+    #foot {
+        flex-direction: column;
+        height: 63vh;
+        position:relative
+    }
+    
+    #form-copy{
+        height: 40%;
+    }
+
+    #mail{
+        width: 308px;
+    }
+
+    .copyr {
+        position: absolute;
+        bottom: 7%;
+    }
+
+    .margin-r{
+        margin:0;
+    }
+
+    #nav-foot{
+        order: 2;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    
+    #logo-links{ 
+        order: 3;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        /*Vuelvo a declarar estos valores aunque ya los habia reutilizado
+        de la clase revers porque por algun motivo que no logro encontrar
+        si no estan aca se rompe todo el footer. Sospecho que debe tener que 
+        ver con que al estar tan arriba declarada la clase revers algo mas 
+        la debe estar pisando*/
+        width: 80%;
+        height: 70%;
+
+    }
+    
+    .links{
+        margin:30px
+    }
+
+    #logo-foot{
+        width: 120px;
+        height: 23px;
+        margin-top: 20px;
+    }
 
 }
