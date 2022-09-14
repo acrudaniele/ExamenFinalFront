@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
 
+/*Estilos generales*/
 
 * {
     box-sizing: border-box;
@@ -10,14 +11,33 @@ body {
     padding: 0;
 }
 
-
-/* Estilo del header */
 .flex {
     display: flex;
     justify-content: space-around;
     align-items: center;
     
 }
+
+
+.flex-c {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Clase que vamos a usar en todos los botones*/
+.boton{
+    width: 134px;
+    height: 44px;
+    border-radius: 50px;
+    border:none;
+    background-color:#8B48BF ;
+    color:#FFFFFF;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+/* Estilo del header */
+
 
 header{
     width: 100vw;
@@ -40,16 +60,7 @@ nav ul li a{
     text-decoration: none;
 }
 
-/*Clase que vamos a usar en todos los botones*/
-.boton{
-    width: 134px;
-    height: 44px;
-    border-radius: 50px;
-    border:none;
-    background-color:#8B48BF ;
-    color:#FFFFFF;
-    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-}
+
 
 /* menu desplegable bars para versión mobile*/
 #hamburguesa{
@@ -71,17 +82,12 @@ nav ul li a{
 }
 
 
-.flex-c {
-    display: flex;
-    flex-direction: column;
-}
-
 .sec-doble {
     width: 40%;
     height: 85%;
     margin-top: 3%;
 }
-.imag-porc {
+#imag-porc {
     height: 75%;
 
 }
@@ -216,11 +222,7 @@ h1 {
 }
 
 /*Comienzo de estilo de ultima sección antes del footer */
-.flex-foot{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+
 
 
 #last-sec {
@@ -306,7 +308,7 @@ div ul li a {
     margin-left: 15%
 }
 
-/*pseudoselectores */
+/*pseudoselectores y animaciones*/
 
 a:hover {
     opacity: 60%;
@@ -318,8 +320,8 @@ a:hover {
     cursor: pointer;
 }
 
-#boton-claro:active , .boton:active {
-    background-color: #242E52;
+.boton:active {
+    transform:scale(0.9);
 }
 
 input:valid {
@@ -331,9 +333,7 @@ input:valid {
 
 @media (max-width: 481px){
     /*Comenzamos con el header*/
-    header{
-        margin-top:30px;
-    }
+    
     nav{
         display:none;
     }
@@ -354,15 +354,18 @@ input:valid {
     .revers {
         flex-direction: column-reverse;
         align-items: center;
+        justify-items: flex-start;
     }
-    .imag-porc {
+    #imag-porc {
         width:90%;
         height: 40%;
-        margin-top: 10%;
+        margin-top: 0;
     }
+    /*No se porque no puedo hacer que la imagen se pegue al header*/
     .sect {
-        height: 130vh;
+        height: 120vh;
         width: 100vw;
+        justify-content: flex-start;
     }
     .sec-doble {
         display: flex;
@@ -376,10 +379,18 @@ input:valid {
         text-align: center;
     }
 
+
     /*Comenzamos con la sección de la lista */
 
     .sec-mob {
-        height: 30%;
+        height: 20%;
+        justify-content: flex-start;
+    }
+
+    #list-mob {
+        height: 130vh;
+        margin-top: 80px;
+        margin-bottom: 0;
     }
 
     .column-mob {
@@ -394,8 +405,22 @@ input:valid {
         width: 80%;
     }
 
+    .titulo-list {
+        background-color: rgba(139, 72, 191, 0.3);
+        margin-left:40px;
+        border-radius: 20px 0 0px 20px;
+        height: 40px;
+        padding-top: 10px;
+    }
 
+    .text-list {
+        margin-left: 50px;
+    }
 
+    /*Sección de las cards */
+    #cards-mob {
+        height: 90vh;
+    }
 
 
 
