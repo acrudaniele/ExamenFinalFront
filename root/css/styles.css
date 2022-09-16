@@ -24,6 +24,24 @@ body {
     flex-direction: column;
 }
 
+.sect {
+    width: 100vw;
+    height: 85vh;
+    margin-bottom: 5%;
+    
+}
+
+.flex-m {
+    display: flex;
+    justify-content: center;
+}
+
+
+.sec-doble {
+    width: 40%;
+    height: 85%;
+    margin-top: 3%;
+}
 
 /*Clase que vamos a usar en todos los botones*/
 .boton{
@@ -69,24 +87,7 @@ nav ul li a{
 
 /*Empieza el estilo del main*/
 
-.sect {
-    width: 100vw;
-    height: 85vh;
-    margin-bottom: 5%;
-    
-}
 
-.flex-m {
-    display: flex;
-    justify-content: center;
-}
-
-
-.sec-doble {
-    width: 40%;
-    height: 85%;
-    margin-top: 3%;
-}
 #imag-porc {
     height: 75%;
 
@@ -115,17 +116,6 @@ h1 {
     width: 70%
 }
 
-
-
-.num-lista {
-    color: white;
-    background-color: #8B48BF;
-    border-radius: 25px;
-    width: 50px;
-    height: 30px;
-    padding: 5px 15px;
-    margin-right: 20px;
-}
 
 .titulo-list {
     font-size: 16px;
@@ -361,7 +351,6 @@ input:valid {
         height: 40%;
         margin-top: 0;
     }
-    /*No se porque no puedo hacer que la imagen se pegue al header*/
     .sect {
         height: 120vh;
         width: 100vw;
@@ -437,6 +426,7 @@ input:valid {
         text-align: center;
         justify-content: center;
         height: 37vh;
+        width: 100vw;
     }
     #titulo-claro{
         width: 73%;
@@ -446,7 +436,8 @@ input:valid {
     #foot {
         flex-direction: column;
         height: 63vh;
-        position:relative
+        position:relative;
+        width: 100vw;
     }
     
     #form-copy{
